@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>login page</title>
+</head>
+<body>
+
+<header class="header">
+  <h2 class="logo"><i class="bi bi-linkedin" style="color: blue;"></i>LINKEDIN</h2>
+  
+  <input type="checkbox"  id="check">
+  <label for="check" class="icons">
+    <i class="bi bi-list" id="menus-icons"></i>
+    <i class="bi bi-x"  id="closes-icons"></i>
+  </label>
+  
+  <nav class="navbar">
+    <a href="#" style="--1:0;">Home</a>
+    <a href="#" style="--1:1;">About</a>
+    <a href="#" style="--1:2;">Services</a>
+    <a href="#" style="--1:3;">Contact</a>
+    <button class="btnLogin-popup">Login</button>
+  </nav>
+</header>
+
+<div class="wrapper">
+<span class="icon-close"><i class="bi bi-x-lg"></i></span>
+
+  <div class="form-box login">
+    <h2>Login</h2>
+    <form action="#">
+      <div class="input-box">
+        <span class="icon"><i class="bi bi-envelope-fill"></i></span>
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><i class="bi bi-lock-fill"></i></span>
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <div class="remember-forget">
+        <label><input type="checkbox">Remember me</label>
+        <a href="#">Forget Password?</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="login-register">
+        <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+      </div>
+    </form>
+  </div>
+  <div class="form-box register">
+    <h2>Registration</h2>
+    <form action="#">
+      <div class="input-box">
+        <span class="icon"><i class="bi bi-person-fill"></i></span>
+        <input type="text" required>
+        <label>Username</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><i class="bi bi-envelope-fill"></i></span>
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><i class="bi bi-lock-fill"></i></span>
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <div class="remember-forget">
+        <label><input type="checkbox">I agree to the terms & conditions</label>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <div class="login-register">
+        <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  <script src="/assets/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
